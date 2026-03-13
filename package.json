@@ -1,0 +1,23 @@
+{
+  "name": "regulatory-system",
+  "version": "1.0.0",
+  "description": "法規文件管理系統 - 用於管理藥品、醫療器材、化妝品、食品等法規文件",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": ["regulatory", "pharmaceutical", "medical-device", "cosmetics", "food"],
+  "author": "Josh",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "app": {
+    "name": "法規文件管理系統",
+    "version": "1.0.0",
+    "env": "development",
+    "port": 3000
+  },
+  "database": {
+    "path": "./data/regulatory.db",
+    "backupPath": "./data/backups/",
+    "maxConnections": 10,
+    "timeout": 5000
+  },
+  "logging": {
+    "level": "info",
+    "maxFiles": 30,
+    "maxSize": "10m",
+    "console": true,
+    "file": true,
+    "logDir": "./logs"
+  },
+  "api": {
+    "baseUrl": "/api/v1",
+    "timeout": 30000,
+    "rateLimit": {
+      "windowMs": 900000,
+      "maxRequests": 100
+    }
+  },
+  "pdf": {
+    "maxFileSize": 52428800,
+    "allowedTypes": ["application/pdf"],
+    "extractOptions": {
+      "maxPages": 1000,
+      "preserveLayout": true
+    }
+  },
+  "regulatory": {
+    "categories": [
+      "藥品",
+      "醫療器材",
+      "化妝品",
+      "食品",
+      "健康食品",
+      "動物用藥"
+    ],
+    "regions": [
+      "台灣 (TFDA)",
+      "美國 (FDA)",
+      "歐盟 (EMA)",
+      "日本 (PMDA)",
+      "中國 (NMPA)"
+    ]
+  }
+}
